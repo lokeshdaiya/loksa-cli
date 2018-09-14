@@ -2,18 +2,25 @@
   "name": "@loksa/ld-cli",
   "version": "1.0.0",
   "description": "Cli tool",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "preferGlobal": true,
+  "files": [
+    "templates",
+    "app"
+  ],
   "bin": {
-    "filesearch": "index.js"
+    "ld": "index.js",
+    "generate": "generate.js"
   },
   "keywords": [
     "cli",
     "node"
   ],
   "author": "Lokesh Daiya",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.0.0"
+  }
 }
